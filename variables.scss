@@ -1,0 +1,31 @@
+$primary: #0699A6;
+$secondary: #9E8C6C;
+$secondary-background:#9e8c6c1a;
+$text-color:#000000;
+$white:#FFF;
+
+
+@mixin flexBox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+
+$my-weight: (
+    "bold": 900,
+    "medium":700,
+    "normal": 400,
+);
+
+ @function getWeights($weight) {
+    @return map-get($map: $my-weight, $key: $weight);
+ };
+
+
+
+// @mixin mobileMode {
+//     @media (max-width: 700px) {
+//         @content
+//     }
+// };
+
