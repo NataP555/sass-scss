@@ -18,7 +18,7 @@ body{
 
 .image{
     border-radius: 175px;
-    background: url(Rectangle.png), lightgray 50% ;
+    background: url(Rectangle.png), lightgray 50%;
     width: 350px;
     height: 350px;
     flex-shrink: 0;
@@ -51,8 +51,6 @@ header{
 h5{
     color: $secondary;
     font-family: 'PT Sans Narrow', sans-serif;;
-    font-size: 18px;
-    font-style: normal;
     font-weight: getWeights(medium);
     line-height: 24px; 
     letter-spacing: 2px;
@@ -62,7 +60,6 @@ h5{
 h1{
     font-family: $secondaryfont;
     font-size: 126px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 112px;
     letter-spacing: -2.172px;
@@ -103,11 +100,10 @@ h1{
 }
 
 
-li {
+li{
     color: $text-color;
     font-family: $mainfont;
     font-size: 20px;
-    font-style: normal;
     font-weight: getWeights(normal);
     line-height: 34px;
     list-style-type:none;
@@ -119,11 +115,6 @@ li {
 
 .recent-works li{
     color:$primary;
-    font-family: $mainfont;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: getWeights(medium);
-    line-height: 34px;
 }
 
 span{
@@ -147,7 +138,6 @@ h3{
     color: $text-color;
     font-family: $secondary;
     font-size: 36px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 46px; 
 }
@@ -167,8 +157,6 @@ hr{
     color: $text-color;
     text-align: right;
     font-family: $mainfont;
-    font-size: 18px;
-    font-style: normal;
     font-weight: getWeights(normal);
     line-height: 24px;
 }
@@ -188,7 +176,6 @@ h2{
     text-align: center;
     font-family: $secondaryfont;
     font-size: 66px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 82px; 
     letter-spacing: -1.138px;
@@ -198,7 +185,6 @@ h4{
     text-align: center;
     font-family: $secondaryfont;
     font-size: 36px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 46px;
     }
@@ -305,7 +291,7 @@ h4{
         line-height: 24px;
     }
 
-    li,.recent-works li{
+    li {
         font-size: 18px;
         line-height: 30px;
     }
