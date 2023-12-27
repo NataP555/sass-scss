@@ -1,4 +1,8 @@
 @import './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&family=Open+Sans&family=PT+Sans+Narrow&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&family=Open+Sans&family=PT+Sans+Narrow&family=Playfair+Display&family=Roboto:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -46,9 +50,7 @@ header{
 
 h5{
     color: $secondary;
-    font-family: PT Sans Narrow;
-    font-size: 18px;
-    font-style: normal;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-weight: getWeights(medium);
     line-height: 24px; 
     letter-spacing: 2px;
@@ -56,9 +58,8 @@ h5{
 }
 
 h1{
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-size: 126px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 112px;
     letter-spacing: -2.172px;
@@ -101,23 +102,21 @@ h1{
 
 li {
     color: $text-color;
-    font-family: PT Sans Narrow;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: getWeights(normal);
     line-height: 34px;
     list-style-type:none;
 }
 .career-traits{
     @include flexBox(column);
-   gap: 10px;
+    gap: 10px;
 }
 
-.recent-works li{
+.examples li{
     color:$primary;
-    font-family: PT Sans Narrow;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: getWeights(medium);
     line-height: 34px;
 }
@@ -134,16 +133,15 @@ span{
 }
 
 p{  color:$text-color;
-    font-family: PT Sans Narrow;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 20px;
     font-weight: getWeights(normal);
     line-height: 34px;
 }
 h3{
     color: $text-color;
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 46px; 
 }
@@ -162,9 +160,7 @@ hr{
 .date{
     color: $text-color;
     text-align: right;
-    font-family: PT Sans Narrow;
-    font-size: 18px;
-    font-style: normal;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-weight: getWeights(normal);
     line-height: 24px;
 }
@@ -182,9 +178,8 @@ footer{
 h2{
     color:$text-color;
     text-align: center;
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-size: 66px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 82px; 
     letter-spacing: -1.138px;
@@ -192,9 +187,8 @@ h2{
 h4{
     color: $primary;
     text-align: center;
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 46px;
     }
@@ -205,7 +199,7 @@ h4{
     background-image: linear-gradient(to left top, $secondary-background 1%, $secondary-background 50%, transparent 51%); 
 }
 
-@media (max-width:1000px){
+@media (max-width:1440px){
     .container{  
         @include flexBox(column);
         align-items: center;
@@ -300,7 +294,7 @@ h4{
         line-height: 24px;
     }
 
-    li,.recent-works li{
+    li,.examples li{
         font-size: 18px;
         line-height: 30px;
     }
@@ -324,44 +318,4 @@ h4{
         bottom: 0;
     }
 }
-
-
-// .main-container {
-
-//     font-size: 30px;
-//     @include flexBox(row);
-
-//     @include mobileMode {
-//         background-color: red;
-//     }
-
-//     &__paragraph-1 {
-//         color: $primary;
-//         font-weight: getWeights(bold);
-
-//         @include mobileMode {
-//             font-size: 10px;
-//         }
-
-//         &:hover {
-//             color: white;
-//         }
-//     }
-
-//     &__paragraph-2 {
-//         color: yellow;
-
-//         @extend .main-container__paragraph-1
-//     }
-
-//     ul {
-//         li {
-
-//             &:nth-child(2) {
-//                 color: $secondary;
-//                 font-weight: getWeights(normal);
-//             }
-//         }
-//     }
-// }
 
