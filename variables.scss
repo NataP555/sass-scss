@@ -5,6 +5,9 @@ $text-color:#000000;
 $white:#FFF;
 
 
+$mainfont: 'PT Sans Narrow', sans-serif;
+$secondaryfont:'Playfair Display', serif;
+
 @mixin flexBox($direction) {
     display: flex;
     flex-direction: $direction;
@@ -20,5 +23,4 @@ $my-weight: (
  @function getWeights($weight) {
     @return map-get($map: $my-weight, $key: $weight);
  };
-
 

@@ -50,6 +50,8 @@ header {
 h5 {
   color: #9E8C6C;
   font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 2px;
@@ -59,6 +61,7 @@ h5 {
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 126px;
+  font-style: normal;
   font-weight: 900;
   line-height: 112px;
   letter-spacing: -2.172px;
@@ -104,6 +107,7 @@ li {
   color: #000000;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
+  font-style: normal;
   font-weight: 400;
   line-height: 34px;
   list-style-type: none;
@@ -115,10 +119,11 @@ li {
   gap: 10px;
 }
 
-.examples li {
+.recent-works li {
   color: #0699A6;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
+  font-style: normal;
   font-weight: 700;
   line-height: 34px;
 }
@@ -144,8 +149,9 @@ p {
 
 h3 {
   color: #000000;
-  font-family: "Playfair Display", serif;
+  font-family: #9E8C6C;
   font-size: 36px;
+  font-style: normal;
   font-weight: 900;
   line-height: 46px;
 }
@@ -166,6 +172,8 @@ hr {
   color: #000000;
   text-align: right;
   font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
@@ -187,6 +195,7 @@ h2 {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 66px;
+  font-style: normal;
   font-weight: 900;
   line-height: 82px;
   letter-spacing: -1.138px;
@@ -197,6 +206,7 @@ h4 {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 36px;
+  font-style: normal;
   font-weight: 900;
   line-height: 46px;
 }
@@ -297,7 +307,7 @@ h4 {
     font-size: 18px;
     line-height: 24px;
   }
-  li, .examples li {
+  li, .recent-works li {
     font-size: 18px;
     line-height: 30px;
   }

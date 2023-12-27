@@ -50,7 +50,9 @@ header{
 
 h5{
     color: $secondary;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;;
+    font-size: 18px;
+    font-style: normal;
     font-weight: getWeights(medium);
     line-height: 24px; 
     letter-spacing: 2px;
@@ -58,8 +60,9 @@ h5{
 }
 
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family: $secondaryfont;
     font-size: 126px;
+    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 112px;
     letter-spacing: -2.172px;
@@ -102,21 +105,23 @@ h1{
 
 li {
     color: $text-color;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: $mainfont;
     font-size: 20px;
+    font-style: normal;
     font-weight: getWeights(normal);
     line-height: 34px;
     list-style-type:none;
 }
 .career-traits{
     @include flexBox(column);
-    gap: 10px;
+   gap: 10px;
 }
 
-.examples li{
+.recent-works li{
     color:$primary;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: $mainfont;
     font-size: 20px;
+    font-style: normal;
     font-weight: getWeights(medium);
     line-height: 34px;
 }
@@ -133,15 +138,16 @@ span{
 }
 
 p{  color:$text-color;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: $mainfont;
     font-size: 20px;
     font-weight: getWeights(normal);
     line-height: 34px;
 }
 h3{
     color: $text-color;
-    font-family: 'Playfair Display', serif;
+    font-family: $secondary;
     font-size: 36px;
+    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 46px; 
 }
@@ -160,7 +166,9 @@ hr{
 .date{
     color: $text-color;
     text-align: right;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: $mainfont;
+    font-size: 18px;
+    font-style: normal;
     font-weight: getWeights(normal);
     line-height: 24px;
 }
@@ -178,8 +186,9 @@ footer{
 h2{
     color:$text-color;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: $secondaryfont;
     font-size: 66px;
+    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 82px; 
     letter-spacing: -1.138px;
@@ -187,8 +196,9 @@ h2{
 h4{
     color: $primary;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: $secondaryfont;
     font-size: 36px;
+    font-style: normal;
     font-weight: getWeights(bold);
     line-height: 46px;
     }
@@ -247,6 +257,7 @@ h4{
         top: -42px;
         bottom: 0;
     }
+    
 }
 
 @media (max-width:768px){
@@ -294,7 +305,7 @@ h4{
         line-height: 24px;
     }
 
-    li,.examples li{
+    li,.recent-works li{
         font-size: 18px;
         line-height: 30px;
     }
@@ -318,4 +329,5 @@ h4{
         bottom: 0;
     }
 }
+
 
